@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: data-multidatasource
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    jdbc-url: jdbc:oracle:thin:@192.168.10.240:1521:XE
+    username: data_center
+    password: 123456
+  second-datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://127.0.0.1:3306/test3?rewriteBatchedStatements=true&useSSL=false
+    username: root
+    password: x5
